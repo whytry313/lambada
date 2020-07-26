@@ -1,0 +1,217 @@
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #e5e5e5;
+	font-family: Ubuntu, Arial, sans-serif;
+}
+
+#logo {
+	display: block;
+	width: 82%;
+	margin: 24px auto;
+}
+
+#menu {
+	width: 240px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fff;
+	box-shadow: 0 1px 14px rgba(0,0,0,0.05);
+}
+
+#navigator {
+	left: 240px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+}
+#path {
+	display: block;
+	padding: 24px;
+	color: #454545;
+}
+#navigator #container {
+	background-color: #fff;
+	margin: 2%;
+	/*min-height: 150px;*/
+	box-shadow: 0 1px 14px rgba(0,0,0,0.05);
+	width: 96%;
+}
+#navigator #container-header {
+	margin: 2%;
+	width: 96%;
+}
+
+/*#container .list-entry {
+	text-decoration: none;
+	color: inherit;
+	color: #323232;
+	cursor: pointer;
+
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}*/
+#navigator #header {
+	background-color: #fff;
+	margin: 2%;
+	min-height: 20px;
+	box-shadow: 0 1px 14px rgba(0,0,0,0.05);
+	width: 92%;
+	padding: 2%;
+	text-align: right;
+}
+.padded {
+	display: block;
+	padding: 5%;
+}
+
+#container .main-table a, #container .main-table .nolink {
+	padding: 12px 15px;
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	cursor: pointer;
+}
+
+#container .list-entry:hover {
+	color: #ff9c42;
+}
+
+#container .list-entry .last-mod {
+	/*float: right;*/
+	font-size: 12px;
+	color: #a5a5a5;
+	width: 180px;
+	text-align: right;
+	padding-right: 15px;
+	/*padding-top: 4px;*/
+}
+
+#container .td-name,
+#container .td-goback {
+	/*width: 100%;*/
+	cursor: pointer;
+	padding: 9px;
+}
+#container .td-size {
+	width: 70px;
+	font-size: 0.8em;
+	text-align: right;
+}
+#container .main-table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+}
+#container .main-table td:first-child {
+	width: 42px;
+	text-align: center;
+}
+#container .main-table tr:nth-child(odd) td {
+	background-color: #f5f5f5;
+}
+#container .main-table tr {
+	opacity: 0.675;
+	-webkit-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+#container .main-table tr:hover {
+	opacity: 1;
+}
+#container .main-table tr td {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+#container .list-entry .icontype {
+	display: inline-block;
+	/*margin-right: 5px;*/
+	padding: 0 7px;
+	width: 20px; height: 20px;
+	vertical-align: top;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	-webkit-transform: scale(0.90);
+	-ms-transform: scale(0.90);
+	-o-transform: scale(0.90);
+	transform: scale(0.90);
+
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#container .list-entry:hover .icontype {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.row {
+	display: block;
+	font-size: 0;
+	width: auto;
+}
+
+.row .half {
+	display: inline-block;
+	width: 50%;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+.myList {
+	max-height: 100px;
+	overflow: auto;
+	display: block;
+	margin: 7px;
+	width: auto;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+.myList .list-el {
+	display: block;
+	cursor: pointer;
+	opacity: 0.7;
+	padding: 7px 12px;
+}
+.myList .list-el:nth-child(even) {
+	background-color: #f5f5f5;
+}
+.myList .list-el:hover {
+	opacity: 1;
+}
+
+
+.btn {
+	color: #FFF;
+	margin: 3px;
+	padding: 7px 12px;
+	border-radius: 3px;
+	display: inline-block;
+	background-color: #e43030;
+
+	opacity: 0.7;
+	cursor: pointer;
+
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:hover {
+	opacity: 1;
+}

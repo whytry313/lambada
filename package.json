@@ -1,0 +1,38 @@
+{
+  "name": "lambada",
+  "repository": {
+    "url": "https://www.facebook.com/why.try.313/"
+  },
+  "homepage": "https://www.facebook.com/why.try.313/",
+  "version": "1.0.0",
+  "description": "Folder Sharing App for local sharing (Samba replacer)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "author": {
+    "name": "whytry313",
+    "email": "no.address@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "*"
+  },
+  "build": {
+    "appId": "lambada-313",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  }
+}
