@@ -1,5 +1,5 @@
 const basepath = process.env.OWD || process.env.PWD;
-const configPath = basepath+'/config.json';
+const { configPath } = require('./utils.js');
 const fs = require('fs');
 const config = require(configPath);
 
